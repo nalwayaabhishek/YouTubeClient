@@ -1,0 +1,24 @@
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1>Search result</h1> 
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      
+         <% @youtubes.each do |youtube| %>
+        <li>
+      <center>
+            <span class="title"> 
+<%= youtube["title"] %></span><br>
+<iframe width="400" height="400" src="http://www.youtube.com/embed/<%= youtube["id"]%>" frameborder="0" allowfullscreen></iframe></center>
+<span class="disclosure_indicator"></span>
+       
+        </li>
+    
+    <% end %>      
+    </ul>
+  </div>
+
+</div>

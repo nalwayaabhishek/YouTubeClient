@@ -1,0 +1,24 @@
+sdk: "/Library/Ruby/Gems/1.8/gems/rhodes-3.1.0"
+sdkversion: 3.1.0
+name: youtube_client
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: "Windows Mobile 6 Professional SDK (ARMV4I)"
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  emulatortarget: ipad
+  BundleIdentifier: com.rhomobile.youtubeclient
+  BundleURLScheme: youtubeclient
+wp:
+  productid: 'f126c090-b6eb-012e-cf8c-48bcc8a1fd59'
+symbian:
+    uid: '0xeb6911e4'
+
+extensions: ["json", "another-extension"]

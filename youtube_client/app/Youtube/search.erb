@@ -1,0 +1,19 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Search You tube</h1>
+    
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :search_result %>">    
+          <div data-role="fieldcontain">
+            <label for="name" class="fieldLabel">Name</label>
+            <input type="text" id="youtube[name]" name="name" />
+          </div>
+      
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>
